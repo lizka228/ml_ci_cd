@@ -39,4 +39,8 @@ jobs:
           path: model.pkl
 
       - name: Log version
+<<<<<<< HEAD
         run: echo "Training model version $MODEL_VERSION"
+=======
+        run: echo "Training model version $MODEL_VERSION"
+>>>>>>> b052d1ca1117e39abf8aef5b6fcd409f2b5ca53a
