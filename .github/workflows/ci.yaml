@@ -23,7 +23,7 @@ jobs:
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
+          restore-keys: | 
           ${{ runner.os }}-pip-
 
       - name: Set up Python
@@ -47,8 +47,4 @@ jobs:
           path: model.pkl
 
       - name: Log version
-<<<<<<< HEAD
         run: echo "Training model version $MODEL_VERSION"
-=======
-        run: echo "Training model version $MODEL_VERSION"
->>>>>>> b052d1ca1117e39abf8aef5b6fcd409f2b5ca53a
